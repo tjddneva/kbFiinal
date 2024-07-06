@@ -23,16 +23,16 @@ public class UserService {
         userRepository.save(user);
     }
 
-//    public boolean authenticate(String username, String password) {
-//        // 사용자 조회
-//        User user = userRepository.findByUsername(username); // 직접 repo에서 구현
-//        if (user == null) {
-//            return false;
-//        }
-//        // 입력된 비밀번호와 저장된 암호화된 비밀번호를 비교
-//        return passwordEncoder.matches(password, user.getPassword());
-//
-//    }
+   public boolean authenticate(String username, String password) {
+       // 사용자 조회
+       User user = userRepository.findByUsername(username); // 직접 repo에서 구현
+       if (user == null) {
+           return false;
+       }
+       // 입력된 비밀번호와 저장된 암호화된 비밀번호를 비교
+       return passwordEncoder.matches(password, user.getPassword());
+
+   }
 
     // 이후 컨트롤러에서 들어오게 될  내용 추가 구현하기
 }
