@@ -28,6 +28,8 @@ dependencies {
     implementation 'org.springframework.security:spring-security-core'
     implementation 'org.springframework.security:spring-security-config'
     implementation 'org.springframework.security:spring-security-web'
+    implementation 'org.springframework.security:spring-security-crypto'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.4'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
